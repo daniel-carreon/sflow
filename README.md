@@ -1,3 +1,6 @@
+> ⚠️ **Este es SFlow v1/v2 (Python). La versión viva es [SFlow v3](https://github.com/daniel-carreon/sflow-next)** — rebuild nativo en Swift.
+> Este repo se conserva como referencia histórica; el desarrollo pasó a `sflow-next`.
+
 <p align="center">
   <img src="logo.png" width="120" alt="SFlow Logo">
 </p>

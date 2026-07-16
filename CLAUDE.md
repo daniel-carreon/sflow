@@ -1,5 +1,17 @@
 # CLAUDE.md — SFlow Development Instructions
 
+> ## ⚠️ ESTE ES SFlow v1/v2 (Python) — SUPERADO POR v3
+>
+> **La versión viva es SFlow v3**, un rebuild nativo en Swift:
+> repo `daniel-carreon/sflow-next` · local `~/Developer/software/sflow-next/`.
+> Es la que está instalada en `/Applications/SFlow.app` (aquí quedó
+> `SFlow-v1-backup.app`).
+>
+> **Este repo se conserva SOLO como referencia histórica. No lo desarrolles.**
+> Si te pidieron trabajar en "SFlow", es casi seguro que quieren `sflow-next`.
+> v3 comparte el mismo data dir (`~/Library/Application Support/SFlow/`) y los
+> mismos IDs de modelo — la migración v1→v3 fue cero copia.
+
 ## What is SFlow?
 
 SFlow is a macOS voice-to-text desktop tool that replaces Wispr Flow ($15/month). It captures audio via global hotkeys, transcribes using Groq Whisper API (~$0.02/hour), and auto-pastes text wherever the cursor is. It includes a floating pill UI overlay, real-time audio visualization, SQLite history, and a web dashboard.
