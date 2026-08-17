@@ -1,4 +1,16 @@
 #!/bin/bash
+# ⛔ MUERTO — NO CORRER. Ver software/sflow-next (SFlow v3 es la version viva).
+#
+# Firma AD-HOC (`codesign --sign -`), lo que ata el permiso TCC al cdhash del
+# binario: cada rebuild lo cambia y macOS revoca Accesibilidad/Microfono. Su
+# dist/ alimenta a install.sh, que instala sobre /Applications/SFlow.app con el
+# mismo bundle ID que v3 — de ahi el dolor de "permisos otra vez" (17 ago 2026).
+#
+# Se conserva como referencia historica del v1/v2 Python.
+echo "⛔ build.sh de SFlow v1/v2 esta DESACTIVADO (firma ad-hoc → revoca TCC de v3)."
+echo "   La version viva es ~/Developer/software/sflow-next."
+exit 1
+
 # build.sh — Build SFlow.app from source (one shot)
 set -e
 

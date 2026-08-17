@@ -1,4 +1,19 @@
 #!/bin/bash
+# ⛔ MUERTO — NO CORRER. Ver software/sflow-next (SFlow v3 es la version viva).
+#
+# Este script firma AD-HOC e instala sobre /Applications/SFlow.app con el MISMO
+# bundle ID que v3. Correrlo pisa la app bien firmada con una ad-hoc y macOS
+# revoca Accesibilidad/Microfono — es el origen medido de "siempre tengo que
+# volver a habilitar permisos en cada actualizacion" (17 ago 2026). De hecho el
+# propio script automatizaba el ritual: abria el panel de Accesibilidad al final
+# porque SABIA que lo iba a romper.
+#
+# Se conserva como referencia historica del v1/v2 Python. Si de verdad hace falta
+# revivirlo, cambia primero el destino y el bundle ID para que no colisione con v3.
+echo "⛔ install.sh de SFlow v1/v2 esta DESACTIVADO (firma ad-hoc → revoca TCC de v3)."
+echo "   La version viva es ~/Developer/software/sflow-next: usa ahi scripts/install.sh."
+exit 1
+
 # install.sh — Build, install, kill old proc, launch new, open Accessibility.
 # Use this instead of `build.sh` when you actually want the running SFlow
 # to update. `build.sh` only produces the bundle; this completes the dance.
